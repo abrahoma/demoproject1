@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Ludo Game</h1>
+
+        <!-- Setup Screen -->
+        <div id="setup-screen">
+            <h2>Select Number of Players</h2>
+            <div class="player-options">
+                <button class="player-option-btn" data-players="2">2 Players</button>
+                <button class="player-option-btn" data-players="3">3 Players</button>
+                <button class="player-option-btn" data-players="4">4 Players</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="hidden">
+            <div id="board"></div>
+            <div id="game-controls">
+                <div id="player-turn"></div>
+                <div id="dice-container">
+                    <div id="dice" data-value="0"></div>
+                    <button id="roll-dice-btn">Roll Dice</button>
+                </div>
+                <div id="game-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
